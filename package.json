@@ -1,0 +1,11 @@
+{
+  "name": "afreekhanlms",
+  "version": "1.0.0",
+  "description": "learn for free",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/main.scss:./assets/css/afreekhanlms.css"
+  },
+  "author": "Jennifer Mogueu",
+  "license": "ISC"
+}

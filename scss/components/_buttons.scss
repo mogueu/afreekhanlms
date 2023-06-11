@@ -1,0 +1,65 @@
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+    background-color: #eee;
+    border-radius: 15px;
+    /*
+        buttons sizes
+    */
+    &.btn-xs{
+        width: auto;
+        border-radius: 15px;
+        padding: 5px 15px;
+        font-weight: 400;
+    }
+
+    &.btn-md{
+        width: 300px;
+        height: 50px;
+        border-radius: 25px;
+        font-size: 1.4rem;
+    }
+
+    &.btn-lg{
+        width: 80%;
+        height: 70px;
+        border-radius: 35px;
+        font-size: 1.6rem;
+    }
+}
+
+/*
+    Button colors
+*/
+
+.btn-primary{
+    background-color: $primary-color;
+    color: #fff;
+}
+.btn-secondary{
+    background-color: $secondary-color;
+    color: #000;
+}
+
+.btn-tertiary{
+    background-color: $tertiary-color;
+    color: #000;
+}
+
+.btn-light{
+    background-color: #fff;
+    color: $primary-color;
+    border: $primary-color;
+}
+
+.btn-transparent{
+    background-color: rgb(255, 255, 255, 0.4);
+    color: #fff;
+    border-color: #fff;
+}
+
