@@ -35,13 +35,6 @@ h2 {
   width: 50%;
   height: 100vh;
 }
-.page-layout > div.sidebar {
-  width: 350px;
-}
-.page-layout > div.sidebar + .right-side {
-  flex-grow: 1;
-  background-color: #fff;
-}
 .page-layout .left-side {
   display: flex;
   flex-direction: column;

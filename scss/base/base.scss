@@ -19,6 +19,47 @@ h2{
     font-weight: 700;
 }
 
+.page-layout{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    & > div{
+        width: 50%;
+        height: 100vh;
+        &.sidebar{
+            width: 350px;
+            & +.right-side{
+                flex-grow: 1;
+                background-color: #fff;
+            }
+        }
+    }
+    .left-side{
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        color: #fff;
+        &.home{
+            @include svgBackgroundLight;
+        }
+        .menu{
+            flex-grow: 1;
+        }
+        .copyright{
+            width: 100%;
+            justify-self: flex-end;
+            text-align: center;
+            color: #fff;
+        }
+    }
+    .right-side{
+        background-color: $primary-color;
+        display: flex;
+    }
+}
+
 .subtitle{
     width: auto;
     display: flex;
@@ -31,5 +72,11 @@ h2{
         content: "";
         width: 100px;
         border: 1px solid #fff
+    }
+}
+
+@media screen and (max-width: 900px){
+    body{
+        display: none;
     }
 }

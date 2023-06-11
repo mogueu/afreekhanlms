@@ -1,0 +1,1 @@
+Visit static site at https://mogueu.github.io/afreekhanlms/
